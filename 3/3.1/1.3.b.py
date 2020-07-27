@@ -1,5 +1,5 @@
-def minus_extreme(n):
-    return int(str(n)[1:-1])
+def minus_extreme(num):
+    return int(str(num)[1:-1])
 
 
 while True:
