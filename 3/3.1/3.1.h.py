@@ -1,5 +1,5 @@
 def list_of_composite(first, second):
-    return [i for i in range(first, second + 1) if len([j for j in range(1, i) if i % j == 0]) >= 2]
+    return [i for i in range(first, second + 1) if sum([j for j in range(1, i) if i % j == 0]) == i]
 
 
 while True:
