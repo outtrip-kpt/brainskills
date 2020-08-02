@@ -16,10 +16,18 @@ while True:
     except ValueError:
         print('Средний балл студентя не является числом, повторите ввод')
     except IndexError:
-        print('Было введено недостаточное количество тданных, повторите ввод')
+        print('Было введено недостаточное количество данных, повторите ввод')
+    else:
+        print('''
+Добавлен студент: {} {} {}  
+из группы: {}  
+средний балл: {}
+'''
+              .format(tmp[0], tmp[1], tmp[2], tmp[3], tmp[4]))
 
 for key, val in group_d.items():
     try:
         print(key, sum(val) / len(val))
     except ZeroDivisionError:
-        print(key, 0)
+        # print(key, 0)
+        pass
