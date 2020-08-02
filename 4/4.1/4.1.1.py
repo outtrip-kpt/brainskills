@@ -4,4 +4,4 @@ with open('doc.txt', 'r', encoding='UTF-8') as f:
             line = f.readline()
             if not line:
                 break
-            print(line.strip(), file=fw)
+            print(line.rstrip(), file=fw)
