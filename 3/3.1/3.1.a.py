@@ -1,5 +1,11 @@
 def sum_n(n):
-    return len(str(n))
+    return sum([int(i) for i in n])
 
 
-print(sum_n(int(input())))
+while True:
+    try:
+        print(sum_n(input()))
+    except ValueError:
+        print('Введите число')
+    else:
+        break
